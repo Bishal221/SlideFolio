@@ -1,0 +1,1027 @@
+<!-- 
+ * @author  Bishal Kayal
+ * @version 2.01, 28/12/2023 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://digitalwebhub.co.in/wp-content/uploads/2023/11/cropped-Fav.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/ddf7c8821d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./Js/tailwind.js"></script>
+    <link rel="stylesheet" href="./Css/custom.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+  <body>
+    <section class="h-screen w-full">
+      <nav class="fixed top-0 left-0 w-full z-[50] bg-white lg:bg-transparent">
+        <div
+          class="container mx-auto py-4 px-4 flex justify-between items-center"
+        >
+          <button class="text-2xl text-[#ff014f] md:hidden" id="menuOpen">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <img
+            class="w-[200px] lg:flex hidden"
+            src="https://digitalwebhub.co.in/wp-content/uploads/2023/11/Digital-Webhub-white.png"
+            alt="Logo"
+          />
+          <img
+            class="w-[200px] lg:hidden"
+            src="https://digitalwebhub.co.in/wp-content/uploads/2023/11/Digital-Webhub-Color.png"
+            alt="Logo"
+          />
+          <div
+            class="flex justify-between items-center lg:text-white text-[#ff014f] gap-x-8"
+          >
+            <button class="text-2xl md:flex hidden" id="menuOpen-2">
+              <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+            <button class="flex justify-between items-center gap-x-3">
+              <span class="text-2xl"><i class="fa-solid fa-message"></i></span>
+              <p class="text-lg hidden sm:block">Chat Now</p>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <aside
+        id="menu"
+        class="fixed top-0 deactive-menu h-full bg-[rgba(0,0,0,0.6)] w-full transition-all duration-500 z-[100]"
+      >
+        <div class="max-w-[400px] w-full bg-white h-full ml-auto">
+          <div class="h-[100px] bg-red-600 px-8 py-5">
+            <div class="flex justify-between items-center">
+              <img
+                class="max-w-[180px] w-full"
+                src="https://digitalwebhub.co.in/wp-content/uploads/2023/11/Digital-Webhub-white.png"
+                alt="Logo"
+              />
+              <button
+                class="py-1 px-3 rounded-full border text-white"
+                id="menuClose"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="mt-5 px-8 py-5 flex flex-col gap-y-4">
+            <div class="flex flex-col gap-y-1">
+              <h1 class="font-bold uppercase">ADDRESS</h1>
+              <p>California, TX 70240</p>
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <h1 class="font-bold uppercase">Email</h1>
+              <a class="" href="mailto:example@example.com"
+                >example@example.com</a
+              >
+            </div>
+            <div class="flex flex-col gap-y-1">
+              <h1 class="font-bold uppercase">Contact</h1>
+              <a class="" href="tel:1234567890">+91 1234567890</a>
+            </div>
+            <div class="mt-8">
+              <h1 class="text-2xl font-semibold">Get Subscribed!</h1>
+              <div class="flex items-center justify-between py-4">
+                <input
+                  type="email"
+                  class="border w-full outline-none border-slate-300 py-3 px-4"
+                  placeholder="Enter your e-mail"
+                />
+                <button
+                  class="h-full flex items-center justify-center border border-slate-300 py-4 px-4"
+                >
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+      <div class="swiper w-full h-full cursor-grab">
+        <div class="swiper-wrapper w-full h-full">
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-1 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-hidden"
+            >
+              <div
+                class="container h-full md:h-[70%] flex flex-col md:flex-row justify-between items-center md:mt-0 mt-[150px] h-auto px-4"
+              >
+                <div
+                  class="md:w-1/2 w-full h-full flex flex-col justify-center"
+                >
+                  <div>
+                    <div class="flex gap-x-5">
+                      <h1
+                        class="xl:text-[6rem] sm:text-[4rem] text-[3.5rem] text-white text-shadow font-semibold leading-[1]"
+                      >
+                        Hello
+                      </h1>
+                      <img
+                        class="xl:w-[80px] w-[50px] h-full object-contain"
+                        src="./Assets/4.png"
+                        alt="Hang Sing"
+                      />
+                    </div>
+                    <h1
+                      class="xl:text-[6rem] sm:text-[4rem] text-[3.5rem] text-white text-shadow font-semibold leading-[1] capitalize"
+                    >
+                      Bishal Kayal
+                    </h1>
+                  </div>
+                  <div class="flex xl:mt-10 mt-6 items-center">
+                    <h1
+                      class="relative sm:text-3xl text-2xl xl:text-4xl text-white font-semibold after:absolute after:bottom-0 after:left-0 after:w-full after:h-[5px] after:rounded-lg after:content-[''] after:bg-[#ff014f] after:z-[-1] z-[1]"
+                      id="typing"
+                    ></h1>
+                  </div>
+                  <button class="w-fit xl:mt-10 mt-6">
+                    <a
+                      href="#"
+                      class="font-bold block capitalize transition-all duration-300 overflow-hidden text-lg xl:px-[52px] px-[45px] xl:py-[16px] py-[10px] rounded-[30px] text-white bg-[#040836] relative after:absolute after:top-0 after:right-[inherit] after:bottom-[inherit] after:left-0 after:content-[''] after:h-full after:w-0 after:-z-[1] z-[1] after:bg-[#ff014f] after:transition-all after:duration-300 hover:after:w-full"
+                      >My Resume</a
+                    >
+                  </button>
+                </div>
+                <div class="md:w-1/2 w-full h-full relative">
+                  <img
+                    src="./Assets/3 (1).png"
+                    class="w-full h-full relative z-[10] object-contain object-no-repeat object-center"
+                    alt="Avter"
+                  />
+                  <img
+                    src="./Assets/7.png"
+                    class="w-full h-full absolute bottom-0 left-0 z-[8] object-contain object-no-repeat object-center"
+                    alt="Avter"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-2 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="container h-full md:h-[70%] flex flex-col gap-y-10 lg:flex-row justify-between items-center md:mt-0 mt-[150px] h-auto px-4"
+              >
+                <div
+                  class="lg:w-[10%] w-full min-h-[150px] md:h-full flex flex-col justify-center"
+                >
+                  <h1
+                    class="xl:text-[4rem] text-center align-vertical text-[2.5rem] md:text-[3rem] text-white text-shadow font-semibold leading-[1]"
+                  >
+                    My Skills
+                  </h1>
+                </div>
+                <div
+                  class="lg:w-[90%] w-full h-auto gap-y-10 relative flex md:flex-row flex-col justify-center items-center xl:ml-[80px] ml-[0px] lg:pb-0 pb-12"
+                >
+                  <div class="px-4">
+                    <div class="border rounded-[10px] py-[50px] px-[30px]">
+                      <img
+                        class="mb-[30px] h-[80px]"
+                        src="./Assets/1-1-1.png"
+                        alt="Website Design"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-xl"
+                          >Website design</a
+                        >
+                      </h4>
+                      <p class="text-lg text-white">
+                        Continue indulged speaking the was horrible for domestic
+                        position. Seeing get rather her you not esteem men
+                        settle is genius take excuse the constructions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div class="border rounded-[10px] py-[50px] px-[30px]">
+                      <img
+                        class="mb-[30px] h-[80px]"
+                        src="./Assets/2-3.png"
+                        alt="App Development"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-xl"
+                          >App Development</a
+                        >
+                      </h4>
+                      <p class="text-lg text-white">
+                        Continue indulged speaking the was horrible for domestic
+                        position. Seeing get rather her you not esteem men
+                        settle is genius take excuse the constructions.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div class="border rounded-[10px] py-[50px] px-[30px]">
+                      <img
+                        class="mb-[30px] h-[80px]"
+                        src="./Assets/4-2.png"
+                        alt="UI/UX Design"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-xl"
+                          >UI/UX Design</a
+                        >
+                      </h4>
+                      <p class="text-lg text-white">
+                        Continue indulged speaking the was horrible for domestic
+                        position. Seeing get rather her you not esteem men
+                        settle is genius take excuse the constructions.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-3 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="container h-full md:h-[70%] flex flex-col gap-y-10 lg:flex-row justify-between items-center md:mt-0 mt-[150px] h-auto px-4"
+              >
+                <div
+                  class="lg:w-[10%] w-full min-h-[150px] md:h-full flex flex-col justify-center"
+                >
+                  <h1
+                    class="xl:text-[4rem] text-center align-vertical text-[2.5rem] md:text-[3rem] text-white text-shadow font-semibold leading-[1]"
+                  >
+                    My Portfolio
+                  </h1>
+                </div>
+                <div
+                  class="lg:w-[90%] w-full h-auto gap-y-10 relative flex lg:flex-row flex-col justify-center items-center xl:ml-[80px] ml-[0px] lg:pb-0 pb-12"
+                >
+                  <div class="px-4">
+                    <div
+                      class="border rounded-[10px] overflow-hidden relative group transition-all duration-300"
+                    >
+                      <img src="./Assets/4-1.jpg" alt="" />
+                      <div
+                        class="absolute left-0 -bottom-[100px] group-hover:bottom-0 transition-all duration-300 w-full py-4 px-4 bg-white flex justify-between items-center"
+                      >
+                        <div>
+                          <h1 class="font-medium">Creative</h1>
+                          <h1 class="font-semibold text-xl">Gamming Apps</h1>
+                        </div>
+                        <a
+                          href="#"
+                          class="block border-2 border-black py-3 px-4 rounded-full"
+                        >
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div
+                      class="border rounded-[10px] overflow-hidden relative group transition-all duration-300"
+                    >
+                      <img src="./Assets/1-1-1.jpg" alt="" />
+                      <div
+                        class="absolute left-0 -bottom-[100px] group-hover:bottom-0 transition-all duration-300 w-full py-4 px-4 bg-white flex justify-between items-center"
+                      >
+                        <div>
+                          <h1 class="font-medium">Creative</h1>
+                          <h1 class="font-semibold text-xl">Gamming Apps</h1>
+                        </div>
+                        <a
+                          href="#"
+                          class="block border-2 border-black py-3 px-4 rounded-full"
+                        >
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div
+                      class="border rounded-[10px] overflow-hidden relative group transition-all duration-300"
+                    >
+                      <img src="./Assets/6-1.jpg" alt="" />
+                      <div
+                        class="absolute left-0 -bottom-[100px] group-hover:bottom-0 transition-all duration-300 w-full py-4 px-4 bg-white flex justify-between items-center"
+                      >
+                        <div>
+                          <h1 class="font-medium">Creative</h1>
+                          <h1 class="font-semibold text-xl">Gamming Apps</h1>
+                        </div>
+                        <a
+                          href="#"
+                          class="block border-2 border-black py-3 px-4 rounded-full"
+                        >
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-1 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="container h-full md:h-[70%] flex flex-col gap-y-10 lg:flex-row justify-between items-center md:mt-0 mt-[150px] h-auto px-4"
+              >
+                <div
+                  class="lg:w-[10%] w-full min-h-[150px] md:h-full flex flex-col justify-center"
+                >
+                  <h1
+                    class="xl:text-[4rem] text-center align-vertical text-[2.5rem] md:text-[3rem] text-white text-shadow font-semibold leading-[1]"
+                  >
+                    My Resume
+                  </h1>
+                </div>
+                <div
+                  class="lg:w-[90%] px-4 w-full h-auto gap-y-12 relative flex flex-col justify-center items-center xl:ml-[80px] ml-[0px] lg:pb-0 pb-12"
+                >
+                  <div
+                    class="w-full gap-y-10 h-1/2 flex md:flex-row flex-col justify-between items-center"
+                  >
+                    <div class="md:w-1/2 w-full flex">
+                      <div
+                        class="min-h-full bg-[rgba(255,255,255,0.5)] w-[3px] before:absolute relative before:content-[''] before:top-0 before:left-[50%] before:-translate-x-[50%] before:w-[20px] before:rounded-full before:border-4 before:border-[#ff014f] before:bg-white before:h-[20px]"
+                      ></div>
+                      <div class="pl-[20px]">
+                        <h1 class="text-2xl text-white font-semibold">
+                          AS - Science & Information
+                        </h1>
+                        <h1
+                          class="uppercase text-lg text-white font-semibold py-3"
+                        >
+                          SuperKing College
+                        </h1>
+                        <p
+                          class="px-4 py-2 text-white font-medium bg-[#ff014f] w-fit mb-4"
+                        >
+                          2001 - 2005
+                        </p>
+                        <p class="md:text-sm lg:text-base text-white">
+                          The training provided by universities in order to
+                          prepare people to work in various sectors of the
+                          economy or areas of culture.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="md:w-1/2 w-full flex">
+                      <div
+                        class="min-h-full bg-[rgba(255,255,255,0.5)] w-[3px] before:absolute relative before:content-[''] before:top-0 before:left-[50%] before:-translate-x-[50%] before:w-[20px] before:rounded-full before:border-4 before:border-[#ff014f] before:bg-white before:h-[20px]"
+                      ></div>
+                      <div class="pl-[20px]">
+                        <h1 class="text-2xl text-white font-semibold">
+                          AS - Science & Information
+                        </h1>
+                        <h1
+                          class="uppercase text-lg text-white font-semibold py-3"
+                        >
+                          SuperKing College
+                        </h1>
+                        <p
+                          class="px-4 py-2 text-white font-medium bg-[#ff014f] w-fit mb-4"
+                        >
+                          2001 - 2005
+                        </p>
+                        <p class="md:text-sm lg:text-base text-white">
+                          The training provided by universities in order to
+                          prepare people to work in various sectors of the
+                          economy or areas of culture.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="w-full gap-y-10 h-1/2 flex md:flex-row flex-col justify-between items-center"
+                  >
+                    <div class="md:w-1/2 w-full flex">
+                      <div
+                        class="min-h-full bg-[rgba(255,255,255,0.5)] w-[3px] before:absolute relative before:content-[''] before:top-0 before:left-[50%] before:-translate-x-[50%] before:w-[20px] before:rounded-full before:border-4 before:border-[#ff014f] before:bg-white before:h-[20px]"
+                      ></div>
+                      <div class="pl-[20px]">
+                        <h1 class="text-2xl text-white font-semibold">
+                          AS - Science & Information
+                        </h1>
+                        <h1
+                          class="uppercase text-lg text-white font-semibold py-3"
+                        >
+                          SuperKing College
+                        </h1>
+                        <p
+                          class="px-4 py-2 text-white font-medium bg-[#ff014f] w-fit mb-4"
+                        >
+                          2001 - 2005
+                        </p>
+                        <p class="md:text-sm lg:text-base text-white">
+                          The training provided by universities in order to
+                          prepare people to work in various sectors of the
+                          economy or areas of culture.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="md:w-1/2 w-full flex">
+                      <div
+                        class="min-h-full bg-[rgba(255,255,255,0.5)] w-[3px] before:absolute relative before:content-[''] before:top-0 before:left-[50%] before:-translate-x-[50%] before:w-[20px] before:rounded-full before:border-4 before:border-[#ff014f] before:bg-white before:h-[20px]"
+                      ></div>
+                      <div class="pl-[20px]">
+                        <h1 class="text-2xl text-white font-semibold">
+                          AS - Science & Information
+                        </h1>
+                        <h1
+                          class="uppercase text-lg text-white font-semibold py-3"
+                        >
+                          SuperKing College
+                        </h1>
+                        <p
+                          class="px-4 py-2 text-white font-medium bg-[#ff014f] w-fit mb-4"
+                        >
+                          2001 - 2005
+                        </p>
+                        <p class="md:text-sm lg:text-base text-white">
+                          The training provided by universities in order to
+                          prepare people to work in various sectors of the
+                          economy or areas of culture.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-2 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="container h-full md:h-[70%] flex flex-col gap-y-10 lg:flex-row justify-between items-center md:mt-0 mt-[150px] h-auto px-4"
+              >
+                <div
+                  class="lg:w-[10%] w-full min-h-[150px] md:h-full flex flex-col justify-center"
+                >
+                  <h1
+                    class="xl:text-[4rem] text-center align-vertical text-[2.5rem] md:text-[3rem] text-white text-shadow font-semibold leading-[1]"
+                  >
+                    My Blogs
+                  </h1>
+                </div>
+                <div
+                  class="lg:w-[90%] w-full h-auto gap-y-10 relative flex md:flex-row flex-col justify-center items-center xl:ml-[80px] ml-[0px] lg:pb-0 pb-12"
+                >
+                  <div class="px-4">
+                    <div class="">
+                      <img
+                        class="mb-[30px] rounded-[10px]"
+                        src="./Assets/3-1-1-432x324.jpg"
+                        alt="Website Design"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-2xl"
+                          >Considered imprudence of he friendship boisterous.</a
+                        >
+                      </h4>
+                      <p class="text-white flex gap-x-8">
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-id-card"></i></span
+                          >Ambrox2023</a
+                        >
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-calendar-days"></i></span
+                          >30th Jan, 2024</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div class="">
+                      <img
+                        class="mb-[30px] rounded-[10px]"
+                        src="./Assets/2-3-1-432x324.jpg"
+                        alt="App Development"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-2xl"
+                          >Considered imprudence of he friendship boisterous.</a
+                        >
+                      </h4>
+                      <p class="text-white flex gap-x-8">
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-id-card"></i></span
+                          >Ambrox2023</a
+                        >
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-calendar-days"></i></span
+                          >30th Jan, 2024</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <div class="px-4">
+                    <div class="">
+                      <img
+                        class="mb-[30px] rounded-[10px]"
+                        src="./Assets/1-3-1-432x324.jpg"
+                        alt="UI/UX Design"
+                      />
+                      <h4 class="mb-[20px]">
+                        <a href="#" class="text-white font-bold text-2xl"
+                          >Considered imprudence of he friendship boisterous.</a
+                        >
+                      </h4>
+                      <p class="text-white flex gap-x-8">
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-id-card"></i></span
+                          >Ambrox2023</a
+                        >
+                        <a
+                          class="hover:text-[#ff014f] transition-all duration-300"
+                          href="#"
+                          ><span class="mr-2"
+                            ><i class="fa-solid fa-calendar-days"></i></span
+                          >30th Jan, 2024</a
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-1 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="flex pt-[600px] lg:pt-0 pb-[80px] lg:pb-0 container px-4 gap-x-10 gap-y-10 items-center flex-col md:flex-row justify-between h-auto"
+              >
+                <div
+                  class="flex lg:flex-row flex-col gap-x-12 gap-y-10 h-full w-full"
+                >
+                  <div
+                    class="text-center lg:text-left lg:w-[30%] w-full info lg:my-0"
+                  >
+                    <h1 class="mb-4 text-5xl font-bold text-white">
+                      Testimonials
+                    </h1>
+                    <p class="text-white">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Iste quae quam nostrum harum non in at eaque quibusdam eum
+                      ratione.
+                    </p>
+                    <div class="mt-4">
+                      <form action="#">
+                        <div class="flex items-center justify-center w-full">
+                          <label
+                            for="dropzone-file"
+                            class="flex flex-col items-center justify-center w-full h-[130px] border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50"
+                          >
+                            <div
+                              class="flex flex-col items-center justify-center pt-5 pb-4"
+                            >
+                              <svg
+                                class="w-8 h-8 mb-2 text-gray-500"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 20 16"
+                              >
+                                <path
+                                  stroke="currentColor"
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  stroke-width="2"
+                                  d="M13 13h3a3 3 0 0 0 0-6h-.025A5.56 5.56 0 0 0 16 6.5 5.5 5.5 0 0 0 5.207 5.021C5.137 5.017 5.071 5 5 5a4 4 0 0 0 0 8h2.167M10 15V6m0 0L8 8m2-2 2 2"
+                                />
+                              </svg>
+                              <p class="mb-2 text-sm text-gray-500">
+                                <span class="font-semibold"
+                                  >Click to upload</span
+                                >
+                                or drag and drop
+                              </p>
+                              <p class="text-xs text-gray-500">
+                                PNG, JPG (MAX. 5mb)
+                              </p>
+                            </div>
+                            <input
+                              id="dropzone-file"
+                              type="file"
+                              class="hidden"
+                            />
+                          </label>
+                        </div>
+                        <div class="flex my-[15px] gap-x-3">
+                          <input
+                            class="w-full text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent"
+                            placeholder="Name"
+                            type="text"
+                          />
+                          <input
+                            class="w-full text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent"
+                            placeholder="Designation"
+                            type="text"
+                          />
+                        </div>
+                        <textarea
+                          class="w-full mb-[15px] text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent resize-none h-[100px]"
+                          placeholder="Write Review"
+                        ></textarea>
+                        <button
+                          class="inline-block font-blod capitalize transition-all duration-300 overflow-hidden rounded-[30px] border-2 border-transparent text-[17px] tracking-[0] py-[16px] px-[52px] bg-[#ff014f] relative z-[1] text-white after:absolute after:top-[inherit] after:right-[inherit] after:bottom-[inherit] after:-left-[5%] after:content-[''] after:h-[150px] after:w-[115%] after:-z-[1] after:bg-black border-none after:transition-all after:duration-300 after:-translate-y-[45%] after:skew-y-[25deg] after:skew-x-[25deg] after:scale-[0] hover:after:-translate-y-[45%] hover:after:skew-y-[25deg] hover:after:skew-x-[25deg] hover:after:scale-[1.2]"
+                        >
+                          Submit Review
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                  <div class="w-full lg:w-[70%]">
+                    <div class="mySwiper overflow-hidden">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div
+                            class="mb-0 overflow-hidden bg-white rounded shadow"
+                            href="#"
+                          >
+                            <div class="relative overflow-hidden h-72">
+                              <img
+                                class="object-cover w-full h-full transition-all hover:scale-110"
+                                src="https://i.postimg.cc/KvrSzTxg/alexandru-zdrobau-dj-RG1v-B1pw-unsplash.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="relative z-20 p-8 -mt-14">
+                              <span
+                                class="inline-block p-3 mb-3 text-xs text-white bg-red-500 rounded-full"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="30"
+                                  height="30"
+                                  fill="currentColor"
+                                  class="bi bi-quote"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                                  />
+                                </svg>
+                              </span>
+
+                              <p class="mb-4 text-base leading-7 text-gray-400">
+                                Keep on jumping to get the most of the jump rope
+                                exercise. It will help you to increase your bone
+                                density as well
+                              </p>
+
+                              <h2
+                                class="text-lg font-bold leading-9 text-black"
+                              >
+                                John Doe
+                              </h2>
+                              <span
+                                class="block text-xs font-semibold text-red-500 uppercase"
+                              >
+                                Senior Vice President
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="mb-0 overflow-hidden bg-white rounded shadow"
+                            href="#"
+                          >
+                            <div class="relative overflow-hidden h-72">
+                              <img
+                                class="object-cover w-full h-full transition-all hover:scale-110"
+                                src="https://i.postimg.cc/j5N31VjJ/jason-yoder-s4n-S3mun-Sg8-unsplash.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="relative z-20 p-8 -mt-14">
+                              <span
+                                class="inline-block p-3 mb-3 text-xs text-white bg-red-500 rounded-full"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="30"
+                                  height="30"
+                                  fill="currentColor"
+                                  class="bi bi-quote"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                                  />
+                                </svg>
+                              </span>
+
+                              <p class="mb-4 text-base leading-7 text-gray-400">
+                                Keep on jumping to get the most of the jump rope
+                                exercise. It will help you to increase your bone
+                                density as well
+                              </p>
+
+                              <h2
+                                class="text-lg font-bold leading-9 text-black"
+                              >
+                                John Doe
+                              </h2>
+                              <span
+                                class="block text-xs font-semibold text-red-500 uppercase"
+                              >
+                                Senior Vice President
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="mb-0 overflow-hidden bg-white rounded shadow"
+                            href="#"
+                          >
+                            <div class="relative overflow-hidden h-72">
+                              <img
+                                class="object-cover w-full h-full transition-all hover:scale-110"
+                                src="https://i.postimg.cc/KvrSzTxg/alexandru-zdrobau-dj-RG1v-B1pw-unsplash.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="relative z-20 p-8 -mt-14">
+                              <span
+                                class="inline-block p-3 mb-3 text-xs text-white bg-red-500 rounded-full"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="30"
+                                  height="30"
+                                  fill="currentColor"
+                                  class="bi bi-quote"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                                  />
+                                </svg>
+                              </span>
+
+                              <p class="mb-4 text-base leading-7 text-gray-400">
+                                Keep on jumping to get the most of the jump rope
+                                exercise. It will help you to increase your bone
+                                density as well
+                              </p>
+
+                              <h2
+                                class="text-lg font-bold leading-9 text-black"
+                              >
+                                John Doe
+                              </h2>
+                              <span
+                                class="block text-xs font-semibold text-red-500 uppercase"
+                              >
+                                Senior Vice President
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div
+                            class="mb-0 overflow-hidden bg-white rounded shadow"
+                            href="#"
+                          >
+                            <div class="relative overflow-hidden h-72">
+                              <img
+                                class="object-cover w-full h-full transition-all hover:scale-110"
+                                src="https://i.postimg.cc/j5N31VjJ/jason-yoder-s4n-S3mun-Sg8-unsplash.jpg"
+                                alt=""
+                              />
+                            </div>
+                            <div class="relative z-20 p-8 -mt-14">
+                              <span
+                                class="inline-block p-3 mb-3 text-xs text-white bg-red-500 rounded-full"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="30"
+                                  height="30"
+                                  fill="currentColor"
+                                  class="bi bi-quote"
+                                  viewBox="0 0 16 16"
+                                >
+                                  <path
+                                    d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                                  />
+                                </svg>
+                              </span>
+
+                              <p class="mb-4 text-base leading-7 text-gray-400">
+                                Keep on jumping to get the most of the jump rope
+                                exercise. It will help you to increase your bone
+                                density as well
+                              </p>
+
+                              <h2
+                                class="text-lg font-bold leading-9 text-black"
+                              >
+                                John Doe
+                              </h2>
+                              <span
+                                class="block text-xs font-semibold text-red-500 uppercase"
+                              >
+                                Senior Vice President
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flex items-center justify-between mt-4">
+                        <div class="flex gap-x-1">
+                          <button
+                            class="p-3 text-white bg-red-400 rounded preBtn"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-chevron-left"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"
+                              />
+                            </svg>
+                          </button>
+                          <button
+                            class="p-3 text-white bg-red-400 rounded nextBtn"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="16"
+                              height="16"
+                              fill="currentColor"
+                              class="bi bi-chevron-right"
+                              viewBox="0 0 16 16"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide w-full h-full">
+            <div
+              class="w-full h-full bg-bg-3 bg-no-repeat bg-center bg-cover flex justify-center items-center overflow-y-scroll"
+            >
+              <div
+                class="flex pt-[240px] md:pt-0 pb-[60px] md:pb-0 container px-4 gap-x-10 gap-y-10 items-center flex-col md:flex-row justify-between w-full h-hull"
+              >
+                <div class="lg:max-w-[800px] md:w-[50%] w-full">
+                  <h1 class="text-4xl font-bold text-white mb-5">
+                    Let's talk?
+                  </h1>
+                  <form>
+                    <input
+                      class="w-full mb-[15px] text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent"
+                      placeholder="Name"
+                      type="text"
+                    />
+                    <div class="flex gap-x-6">
+                      <input
+                        class="w-1/2 mb-[15px] text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent"
+                        type="email"
+                        placeholder="Email"
+                      />
+                      <input
+                        class="w-1/2 mb-[15px] text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent"
+                        type="number"
+                        placeholder="Phone"
+                      />
+                    </div>
+                    <textarea
+                      class="w-full mb-[15px] text-white bg-[rgba(0,0,0,0.3)] border border-[rgba(255,255,255,0.3)] p-[15px] text-[1rem] font-semilight leading-[1.5] outline-blue-400 focus:border-transparent resize-none h-[250px]"
+                      placeholder="Write Message"
+                    ></textarea>
+                    <button
+                      class="inline-block font-blod capitalize transition-all duration-300 overflow-hidden rounded-[30px] border-2 border-transparent text-[17px] tracking-[0] py-[16px] px-[52px] bg-[#ff014f] relative z-[1] text-white after:absolute after:top-[inherit] after:right-[inherit] after:bottom-[inherit] after:-left-[5%] after:content-[''] after:h-[150px] after:w-[115%] after:-z-[1] after:bg-black border-none after:transition-all after:duration-300 after:-translate-y-[45%] after:skew-y-[25deg] after:skew-x-[25deg] after:scale-[0] hover:after:-translate-y-[45%] hover:after:skew-y-[25deg] hover:after:skew-x-[25deg] hover:after:scale-[1.2]"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </div>
+                <div
+                  class="lg:w-[30%] md:w-[50%] w-full flex flex-col gap-y-10"
+                >
+                  <div class="flex">
+                    <div>
+                      <i
+                        class="fa-solid fa-envelope bg-[#00c0ff] h-[60px] w-[60px] leading-[60px] text-center text-white text-[30px] mr-[20px] mt-[5px] rounded-[5px]"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="mb-[10px] uppercase text-white">our email</p>
+                      <h1
+                        class="text-white font-semibold leading-[1.3] flex text-[18px] flex-col"
+                      >
+                        <a href="#">example@example.com</a>
+                        <a href="#">example@example.com</a>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div>
+                      <i
+                        class="fa-solid fa-location-dot bg-[#ff014f] h-[60px] w-[60px] leading-[60px] text-center text-white text-[30px] mr-[20px] mt-[5px] rounded-[5px]"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="mb-[10px] uppercase text-white">address</p>
+                      <h1
+                        class="text-white font-semibold leading-[1.3] flex text-[18px] flex-col"
+                      >
+                        <a href="#">example@example.com</a>
+                        <a href="#">example@example.com</a>
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="flex">
+                    <div>
+                      <i
+                        class="fa-solid fa-headphones bg-[#fec447] h-[60px] w-[60px] leading-[60px] text-center text-white text-[30px] mr-[20px] mt-[5px] rounded-[5px]"
+                      ></i>
+                    </div>
+                    <div>
+                      <p class="mb-[10px] uppercase text-white">phone</p>
+                      <h1
+                        class="text-white font-semibold leading-[1.3] flex text-[18px] flex-col"
+                      >
+                        <a href="#">example@example.com</a>
+                        <a href="#">example@example.com</a>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sm:w-[100px] w-[80px] absolute right-6 bottom-6">
+          <div class="swiper-button-prev navigationBtn">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </div>
+          <div class="swiper-button-next navigationBtn">
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./Js/main.js"></script>
+  </body>
+</html>

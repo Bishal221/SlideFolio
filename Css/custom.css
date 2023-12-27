@@ -1,0 +1,65 @@
+/*
+ * @author  Bishal Kayal
+ * @version 2.01, 28/12/2023
+ */
+.active-menu {
+  right: 0 !important;
+  transition: all 0.5s linear;
+}
+
+.deactive-menu {
+  right: -100% !important;
+  transition: all 0.5s linear;
+}
+
+.text-shadow {
+  text-shadow: 3px 5px rgba(0, 0, 0, 0.351);
+}
+
+.typed-cursor {
+  font-size: 2.25rem;
+  color: white;
+}
+.swiper-pagination-fraction {
+  color: white;
+}
+.swiper-pagination-current {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.swiper-pagination-total {
+  font-weight: 700;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
+}
+.navigationBtn {
+  width: 0;
+  height: 0;
+  top: 97%;
+  margin: 0 auto;
+  color: white;
+  font-size: 1.5rem;
+  z-index: 9999;
+}
+
+@media (min-width: 1024px) {
+  .align-vertical {
+    transform: scale(-1, -1);
+    writing-mode: vertical-rl;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  margin: 0;
+}
+
+@media (max-width: 1023px) {
+  .nav-active {
+    background-color: rgba(0, 0, 0, 0.551);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.551);
+    backdrop-filter: blur(5px);
+  }
+}
